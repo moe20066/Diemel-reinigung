@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diemel-Reinigung.de - Professionelle Gebäudereinigung in Diemelstadt. Büroreinigung, Privatreinigung, Glasreinigung. Jetzt Angebot einholen!">
+    <meta name="keywords" content="Diemel Reinigung, Reinigungsfirma Diemelstadt, Gebäudereinigung, Büroreinigung, Privatreinigung, Walme">
+    <meta name="author" content="Diemel-Reinigung.de">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:type" content="business.business">
+    <meta property="og:title" content="Diemel-Reinigung.de - Professionelle Gebäudereinigung">
+    <meta property="og:description" content="Ihr zuverlässiger Partner für makellose Sauberkeit in Diemelstadt und Umgebung.">
+    <meta property="og:url" content="https://diemel-reinigung.de">
+    
+    <title>Diemel-Reinigung.de | Professionelle Gebäudereinigung in Diemelstadt</title>
+    
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌊%3C/text%3E%3C/svg%3E">
+    
+    <style>
+        :root {
+            --wave-dark: #0891b2;
+            --wave-main: #06b6d4;
+            --wave-light: #22d3ee;
+            --wave-pale: #cffafe;
+            --text-dark: #0f172a;
+            --text-gray: #475569;
+            --bg-light: #f0f9ff;
+            --white: #ffffff;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        html { scroll-behavior: smooth; }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+        
+        /* Logo mit prominenter Welle */
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .logo-text {
+            font-size: 1.6rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: var(--text-dark);
+            position: relative;
+            z-index: 2;
+            line-height: 1.2;
+        }
+        
+        .logo-text span {
+            color: var(--wave-dark);
+        }
+        
+        .logo-domain {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--wave-main);
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-top: 2px;
+        }
+        
+        /* Große animierte Welle unter dem Logo */
+        .logo-wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 30px;
+            overflow: visible;
+        }
+        
+        .logo-wave svg {
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+        }
+        
+        .wave-path {
+            fill: none;
+            stroke: var(--wave-main);
+            stroke-width: 4;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            animation: wave-motion 2s ease-in-out infinite;
+        }
+        
+        .wave-path:nth-child(2) {
+            stroke: var(--wave-light);
+            stroke-width: 3;
+            opacity: 0.6;
+            animation-delay: -0.5s;
+        }
+        
+        .wave-path:nth-child(3) {
+            stroke: var(--wave-dark);
+            stroke-width: 2;
+            opacity: 0.4;
+            animation-delay: -1s;
+        }
+        
+        @keyframes wave-motion {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255,255,255,0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(6, 182, 212, 0.1);
+            z-index: 1000;
+            padding: 0.75rem 0;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: var(--text-gray);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+            position: relative;
+        }
+        
+        .nav-links a:hover {
+            color: var(--wave-dark);
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--wave-main), var(--wave-light));
+            border-radius: 2px;
+            transition: width 0.3s;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, var(--wave-dark), var(--wave-main));
+            color: white;
+            padding: 0.875rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(6, 182, 212, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+        
+        .cta-button:hover::before {
+            left: 100%;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(6, 182, 212, 0.5);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--wave-dark);
+        }
+        
+        /* Hero Section mit großer Welle */
+        .hero {
+            margin-top: 100px;
+            padding: 5rem 2rem 8rem;
+            background: linear-gradient(180deg, #ecfeff 0%, #cffafe 30%, #a5f3fc 60%, #67e8f9 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Große dekorative Welle im Hintergrund */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 10%;
+            right: -5%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(6,182,212,0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: pulse 4s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        
+        /* Große Welle am unteren Rand */
+        .hero-wave-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,250.7C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+            background-size: cover;
+            background-position: bottom;
+        }
+        
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+            font-weight: 800;
+        }
+        
+        .hero h1 span {
+            color: var(--wave-dark);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .hero h1 span::after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            background: linear-gradient(120deg, var(--wave-light), transparent);
+            z-index: -1;
+            opacity: 0.6;
+            border-radius: 4px;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-gray);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        
+        .hero-address {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255,255,255,0.9);
+            padding: 0.75rem 1.25rem;
+            border-radius: 50px;
+            font-weight: 600;
+            color: var(--wave-dark);
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(6, 182, 212, 0.2);
+            border: 2px solid var(--wave-light);
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: var(--wave-dark);
+            padding: 0.875rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            border: 3px solid var(--wave-light);
+            transition: all 0.3s;
+            cursor: pointer;
+            display: inline-block;
+        }
+        
+        .btn-secondary:hover {
+            background: var(--wave-pale);
+            border-color: var(--wave-main);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(6, 182, 212, 0.2);
+        }
+        
+        .hero-image {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 30px 60px -15px rgba(6, 182, 212, 0.3);
+            transform: perspective(1000px) rotateY(-5deg);
+            transition: transform 0.5s;
+            border: 4px solid white;
+        }
+        
+        .hero-image:hover {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+        
+        .hero-badge {
+            position: absolute;
+            bottom: -25px;
+            left: -25px;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(6, 182, 212, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            animation: float 3s ease-in-out infinite;
+            border: 3px solid var(--wave-light);
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .badge-icon {
+            width: 55px;
+            height: 55px;
+            background: linear-gradient(135deg, var(--wave-main), var(--wave-light));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            animation: wave-icon 2s ease-in-out infinite;
+        }
+        
+        @keyframes wave-icon {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            25% { transform: scale(1.1) rotate(-5deg); }
+            75% { transform: scale(1.1) rotate(5deg); }
+        }
+        
+        /* Services mit Wellen-Übergang */
+        .services {
+            padding: 6rem 2rem;
+            background: white;
+            position: relative;
+        }
+        
+        .wave-top {
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,50 C240,100 480,0 720,50 C960,100 1200,0 1440,50 L1440,100 L0,100 Z'%3E%3C/path%3E%3C/svg%3E");
+            background-size: cover;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-header {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 4rem;
+        }
+        
+        .section-header h2 {
+            color: var(--wave-main);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        
+        .section-header h3 {
+            font-size: 2.75rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+            font-weight: 800;
+        }
+        
+        .section-header p {
+            color: var(--text-gray);
+            font-size: 1.125rem;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            padding: 2.5rem;
+            background: linear-gradient(145deg, #ffffff, #f0f9ff);
+            border-radius: 24px;
+            transition: all 0.4s;
+            border: 2px solid #e0f2fe;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--wave-dark), var(--wave-light), var(--wave-dark));
+            background-size: 200% 100%;
+            animation: wave-gradient 3s linear infinite;
+            transform: scaleX(0);
+            transition: transform 0.4s;
+        }
+        
+        @keyframes wave-gradient {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 200% 50%; }
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px rgba(6, 182, 212, 0.15);
+            border-color: var(--wave-light);
+        }
+        
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .service-icon {
+            width: 75px;
+            height: 75px;
+            background: linear-gradient(135deg, var(--wave-pale), #e0f2fe);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.25rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            overflow: hidden;
+            border: 3px solid var(--wave-light);
+        }
+        
+        .service-icon::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            right: -15px;
+            width: 40px;
+            height: 40px;
+            background: var(--wave-light);
+            border-radius: 50%;
+            opacity: 0.3;
+            animation: ripple 2s infinite;
+        }
+        
+        @keyframes ripple {
+            0% { transform: scale(1); opacity: 0.3; }
+            100% { transform: scale(2); opacity: 0; }
+        }
+        
+        .service-card h4 {
+            font-size: 1.375rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-dark);
+        }
+        
+        .service-card p {
+            color: var(--text-gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        
+        .service-link {
+            color: var(--wave-dark);
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: gap 0.3s;
+        }
+        
+        .service-link:hover {
+            gap: 1rem;
+        }
+        
+        /* Stats mit Wellen-Hintergrund */
+        .stats {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--wave-dark), #0891b2, #0e7490);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .stats::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        
+        /* Große Welle in Stats */
+        .stats-wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            overflow: hidden;
+        }
+        
+        .stats-wave::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 200%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,60 C150,120 350,0 600,60 C850,120 1050,0 1200,60 L1200,120 L0,120 Z' fill='rgba(255,255,255,0.1)'/%3E%3C/svg%3E");
+            background-size: 50% 100%;
+            animation: wave-scroll 10s linear infinite;
+        }
+        
+        @keyframes wave-scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        .stats-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .stat-item h4 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to bottom, white, var(--wave-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        
+        .stat-item p {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            font-weight: 600;
+        }
+        
+        /* Pricing */
+        .pricing {
+            padding: 8rem 2rem 6rem;
+            background: linear-gradient(to bottom, white, var(--bg-light));
+            position: relative;
+        }
+        
+        .pricing-wave-top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100'%3E%3Cpath fill='%230891b2' fill-opacity='1' d='M0,50 C240,100 480,0 720,50 C960,100 1200,0 1440,50 L1440,0 L0,0 Z'%3E%3C/path%3E%3C/svg%3E");
+            background-size: cover;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .pricing-card {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 24px;
+            border: 3px solid #e0f2fe;
+            text-align: center;
+            transition: all 0.4s;
+            position: relative;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--wave-light);
+            box-shadow: 0 25px 50px rgba(6, 182, 212, 0.15);
+        }
+        
+        .pricing-card.featured {
+            border-color: var(--wave-main);
+            transform: scale(1.05);
+            box-shadow: 0 30px 60px rgba(6, 182, 212, 0.25);
+            z-index: 2;
+            background: linear-gradient(to bottom, white, #f0fdff);
+        }
+        
+        .pricing-card.featured::before {
+            content: '⭐ Beliebt';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--wave-dark), var(--wave-main));
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 700;
+            box-shadow: 0 4px 15px rgba(6, 182, 212, 0.4);
+        }
+        
+        .pricing-header {
+            margin-bottom: 2rem;
+        }
+        
+        .pricing-header h3 {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .pricing-header p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+        
+        .price {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin: 1.5rem 0;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .price::after {
+            content: '';
+            position: absolute;
+            bottom: 10px;
+            left: -10px;
+            right: -10px;
+            height: 15px;
+            background: linear-gradient(120deg, var(--wave-light), transparent);
+            z-index: -1;
+            opacity: 0.5;
+            border-radius: 4px;
+        }
+        
+        .price span {
+            font-size: 1rem;
+            color: var(--text-gray);
+            font-weight: 500;
+        }
+        
+        .pricing-features {
+            list-style: none;
+            margin: 2rem 0;
+            text-align: left;
+        }
+        
+        .pricing-features li {
+            padding: 1rem 0;
+            border-bottom: 2px solid #f0f9ff;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--text-gray);
+            font-weight: 500;
+        }
+        
+        .pricing-features li::before {
+            content: '✓';
+            color: white;
+            font-weight: bold;
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, var(--wave-main), var(--wave-light));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.875rem;
+            flex-shrink: 0;
+        }
+        
+        .btn-pricing {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 12px;
+            border: 3px solid var(--wave-main);
+            background: transparent;
+            color: var(--wave-dark);
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-pricing:hover {
+            background: var(--wave-main);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .pricing-card.featured .btn-pricing {
+            background: linear-gradient(135deg, var(--wave-dark), var(--wave-main));
+            color: white;
+            border: none;
+            box-shadow: 0 4px 15px rgba(6, 182, 212, 0.4);
+        }
+        
+        /* Contact */
+        .contact {
+            padding: 6rem 2rem;
+            background: white;
+            position: relative;
+        }
+        
+        .contact-wave-top {
+            position: absolute;
+            top: -1px;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 80'%3E%3Cpath fill='%23f0f9ff' fill-opacity='1' d='M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z'%3E%3C/path%3E%3C/svg%3E");
+            background-size: cover;
+        }
+        
+        .contact-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 4rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .contact-info h2 {
+            color: var(--wave-main);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        
+        .contact-info h3 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        
+        .contact-info > p {
+            color: var(--text-gray);
+            margin-bottom: 2.5rem;
+            font-size: 1.125rem;
+        }
+        
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            padding: 1.25rem;
+            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+            border-radius: 16px;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+        
+        .contact-item:hover {
+            background: white;
+            border-color: var(--wave-light);
+            transform: translateX(8px);
+            box-shadow: 0 10px 30px rgba(6, 182, 212, 0.15);
+        }
+        
+        .contact-icon {
+            width: 55px;
+            height: 55px;
+            background: linear-gradient(135deg, var(--wave-main), var(--wave-light));
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);
+        }
+        
+        .contact-text strong {
+            display: block;
+            color: var(--text-dark);
+            margin-bottom: 0.25rem;
+            font-size: 1.1rem;
+        }
+        
+        .contact-text span {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 24px;
+            box-shadow: 0 25px 50px -12px rgba(6, 182, 212, 0.15);
+            border: 3px solid #e0f2fe;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            font-size: 0.9rem;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e0f2fe;
+            border-radius: 12px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all 0.3s;
+            background: #f8fafc;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--wave-main);
+            background: white;
+            box-shadow: 0 0 0 4px rgba(6, 182, 212, 0.1);
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: start;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.875rem;
+            color: var(--text-gray);
+        }
+        
+        .checkbox-group input {
+            margin-top: 0.25rem;
+            width: 20px;
+            height: 20px;
+            accent-color: var(--wave-main);
+        }
+        
+        .checkbox-group a {
+            color: var(--wave-dark);
+            text-decoration: underline;
+            font-weight: 700;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 1.125rem;
+            background: linear-gradient(135deg, var(--wave-dark), var(--wave-main));
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            box-shadow: 0 4px 15px rgba(6, 182, 212, 0.4);
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(6, 182, 212, 0.5);
+        }
+        
+        /* Footer mit Welle */
+        footer {
+            background: var(--text-dark);
+            color: #94a3b8;
+            padding: 5rem 2rem 2rem;
+            position: relative;
+        }
+        
+        .footer-wave {
+            position: absolute;
+            top: -1px;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,0 L0,0 Z'%3E%3C/path%3E%3C/svg%3E");
+            background-size: cover;
+        }
+        
+        .footer-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-brand .logo-text {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .footer-brand p {
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            color: #cbd5e1;
+        }
+        
+        .footer-address {
+            background: rgba(6, 182, 212, 0.1);
+            padding: 1rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--wave-main);
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-address strong {
+            color: white;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-links a {
+            width: 45px;
+            height: 45px;
+            background: rgba(6, 182, 212, 0.2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .social-links a:hover {
+            background: var(--wave-main);
+            transform: translateY(-3px);
+        }
+        
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 1.125rem;
+        }
+        
+        .footer-col ul {
+            list-style: none;
+        }
+        
+        .footer-col li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-col a {
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .footer-col a:hover {
+            color: var(--wave-light);
+            transform: translateX(5px);
+        }
+        
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+            text-align: center;
+            font-size: 0.875rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            box-shadow: 0 -4px 30px rgba(0,0,0,0.15);
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 9999;
+            transform: translateY(100%);
+            transition: transform 0.4s;
+            border-top: 4px solid var(--wave-main);
+        }
+        
+        .cookie-banner.show {
+            transform: translateY(0);
+        }
+        
+        .cookie-text {
+            max-width: 700px;
+        }
+        
+        .cookie-text strong {
+            display: block;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .cookie-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .cookie-btn {
+            padding: 0.875rem 1.75rem;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-weight: 700;
+            transition: all 0.3s;
+        }
+        
+        .cookie-accept {
+            background: linear-gradient(135deg, var(--wave-dark), var(--wave-main));
+            color: white;
+            box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);
+        }
+        
+        .cookie-accept:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(6, 182, 212, 0.4);
+        }
+        
+        .cookie-decline {
+            background: #f1f5f9;
+            color: var(--text-gray);
+        }
+        
+        /* Responsive */
+        @media (max-width: 968px) {
+            .nav-links { display: none; }
+            .mobile-menu-btn { display: block; }
+            
+            .hero-container { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2.5rem; }
+            .hero-image { order: -1; }
+            
+            .contact-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            
+            .pricing-card.featured { transform: scale(1); }
+            
+            .cookie-banner {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .form-row { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .services-grid { grid-template-columns: 1fr; }
+            
+            .logo-text { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo-container">
+                <div class="logo-text">
+                    Diemel<span>-Reinigung</span>
+                    <span class="logo-domain">.de</span>
+                </div>
+                <div class="logo-wave">
+                    <svg viewBox="0 0 300 30" preserveAspectRatio="none">
+                        <path class="wave-path" d="M0,15 Q25,5 50,15 T100,15 T150,15 T200,15 T250,15 T300,15" />
+                        <path class="wave-path" d="M0,20 Q25,10 50,20 T100,20 T150,20 T200,20 T250,20 T300,20" />
+                        <path class="wave-path" d="M0,25 Q25,15 50,25 T100,25 T150,25 T200,25 T250,25 T300,25" />
+                    </svg>
+                </div>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#leistungen">Leistungen</a></li>
+                <li><a href="#preise">Preise</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#kontakt" class="cta-button">Angebot anfordern</a></li>
+            </ul>
+            
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+        </div>
+        
+        <div id="mobile-menu" style="display: none; padding: 1rem 2rem; background: white; border-top: 3px solid var(--wave-light);">
+            <a href="#leistungen" style="display: block; padding: 0.75rem 0; color: var(--text-gray); font-weight: 600;">Leistungen</a>
+            <a href="#preise" style="display: block; padding: 0.75rem 0; color: var(--text-gray); font-weight: 600;">Preise</a>
+            <a href="#kontakt" style="display: block; padding: 0.75rem 0; color: var(--wave-dark); font-weight: 700;">Kontakt</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div>
+                <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.95); color: var(--wave-dark); padding: 0.75rem 1.25rem; border-radius: 50px; font-weight: 700; font-size: 0.9rem; margin-bottom: 1.5rem; box-shadow: 0 4px 15px rgba(6, 182, 212, 0.2); border: 2px solid var(--wave-light);">
+                    <span style="font-size: 1.2rem;">🌊</span> Ihr Reinigungspartner in Diemelstadt
+                </div>
+                
+                <h1>Diemel-Reinigung.de<br><span>Sauberkeit</span>, die überzeugt</h1>
+                
+                <div class="hero-address">
+                    <span>📍</span>
+                    <span>Walme 4, 34474 Diemelstadt</span>
+                </div>
+                
+                <p>Professionelle Gebäudereinigung für Büros, Praxen und Privathaushalte. Zuverlässig, gründlich und mit ökologischen Reinigungsmitteln – Ihr Partner für makellose Sauberkeit in der Region.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#kontakt" class="cta-button">Kostenloses Angebot</a>
+                    <a href="#leistungen" class="btn-secondary">Leistungen entdecken</a>
+                </div>
+                
+                <div style="margin-top: 2.5rem; display: flex; gap: 2rem; flex-wrap: wrap;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-gray); font-size: 0.9rem; font-weight: 600;">
+                        <span style="color: var(--wave-dark); font-size: 1.2rem;">✓</span> ISO zertifiziert
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-gray); font-size: 0.9rem; font-weight: 600;">
+                        <span style="color: var(--wave-dark); font-size: 1.2rem;">✓</span> 24h Erreichbarkeit
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-gray); font-size: 0.9rem; font-weight: 600;">
+                        <span style="color: var(--wave-dark); font-size: 1.2rem;">✓</span> Ökologisch rein
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&auto=format&fit=crop&q=80" alt="Professionelle Reinigungskraft bei der Arbeit" style="width: 100%; height: 500px; object-fit: cover;">
+                
+                <div class="hero-badge">
+                    <div class="badge-icon">🌊</div>
+                    <div>
+                        <div style="font-weight: 800; color: var(--text-dark); font-size: 1.125rem;">4.9/5 Kundenbewertung</div>
+                        <div style="font-size: 0.875rem; color: var(--text-gray);">Basierend auf 89 Reviews</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave-bottom"></div>
+    </section>
+
+    <!-- Services -->
+    <section id="leistungen" class="services">
+        <div class="wave-top"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2>Unser Angebot</h2>
+                <h3>Reinigungslösungen für jeden Bedarf</h3>
+                <p>Von der täglichen Unterhaltsreinigung bis zur spezialisierten Desinfektion – wir bieten das komplette Spektrum professioneller Gebäudereinigung.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h4>Büroreinigung</h4>
+                    <p>Tägliche oder wöchentliche Reinigung Ihrer Büroräume. Inklusive Küche, sanitäre Anlagen und aller Arbeitsflächen. Flexible Zeitfenster möglich.</p>
+                    <a href="#kontakt" class="service-link">Mehr erfahren →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h4>Privatreinigung</h4>
+                    <p>Haushaltsreinigung, die Ihnen Zeit schenkt. Zuverlässige Putzkräfte für Ihre Wohnung oder Ihr Haus. Haftpflichtversichert und geprüft.</p>
+                    <a href="#kontakt" class="service-link">Mehr erfahren →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🪟</div>
+                    <h4>Glas- & Fassadenreinigung</h4>
+                    <p>Streifenfreie Fenster und gepflegte Fassaden. Auch für hohe Gebäude mit professioneller Technik und Hubsteigern.</p>
+                    <a href="#kontakt" class="service-link">Mehr erfahren →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🧹</div>
+                    <h4>Bauendreinigung</h4>
+                    <p>Gründliche Reinigung nach Renovierungen oder Neubauten. Entfernung von Bauschutt und Feinstaub. Übergabereinigung inklusive.</p>
+                    <a href="#kontakt" class="service-link">Mehr erfahren →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🧼</div>
+                    <h4>Desinfektion & Hygiene</h4>
+                    <p>Professionelle Desinfektion für Praxen, Küchen und sensible Bereiche nach DIN-Standards. Viruzid wirksam.</p>
+                    <a href="#kontakt" class="service-link">Mehr erfahren →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🛋️</div>
+                    <h4>Polster- & Teppichreinigung</h4>
+                    <p>Tiefenreinigung für textile Oberflächen. Entfernt Flecken, Gerüche und Allergene. Schnelle Trocknungszeiten.</p>
+                    <a href="#kontakt" class="service-link">Mehr erfahren →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="stats-wave"></div>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h4>300+</h4>
+                <p>Zufriedene Kunden</p>
+            </div>
+            <div class="stat-item">
+                <h4>12</h4>
+                <p>Jahre Erfahrung</p>
+            </div>
+            <div class="stat-item">
+                <h4>25</h4>
+                <p>Professionelle Mitarbeiter</p>
+            </div>
+            <div class="stat-item">
+                <h4>99%</h4>
+                <p>Termintreue</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="preise" class="pricing">
+        <div class="pricing-wave-top"></div>
+        <div class="container" style="padding-top: 2rem;">
+            <div class="section-header">
+                <h2>Transparente Preise</h2>
+                <h3>Faire Kosten ohne versteckte Gebühren</h3>
+                <p>Sie zahlen nur für die Zeit, die wir bei Ihnen arbeiten. Keine Mindestlaufzeit, keine Kompromisse bei der Qualität.</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Einzelbuchung</h3>
+                        <p>Für gelegentliche Reinigungen</p>
+                    </div>
+                    <div class="price">32€<span>/Stunde</span></div>
+                    <ul class="pricing-features">
+                        <li>Mindestabnahme 3 Stunden</li>
+                        <li>Alle Reinigungsmittel inklusive</li>
+                        <li>Anfahrtskosten inklusive</li>
+                        <li>Keine Vertragsbindung</li>
+                    </ul>
+                    <button class="btn-pricing" onclick="selectPackage('Einzelbuchung')">Auswählen</button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h3>Regelmäßig</h3>
+                        <p>Wöchentlich oder alle 14 Tage</p>
+                    </div>
+                    <div class="price">27€<span>/Stunde</span></div>
+                    <ul class="pricing-features">
+                        <li>Feste Putzfrau/Putzer</li>
+                        <li>Zusatzleistungen buchbar</li>
+                        <li>Monatliche Rechnung</li>
+                        <li>Priority-Support</li>
+                        <li>Kostenlose Ersatzterminierung</li>
+                    </ul>
+                    <button class="btn-pricing" onclick="selectPackage('Regelmäßig')">Auswählen</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Gewerbe</h3>
+                        <p>Für Unternehmen & Praxen</p>
+                    </div>
+                    <div class="price">24€<span>/Stunde</span></div>
+                    <ul class="pricing-features">
+                        <li>Ab 20 Stunden/Woche</li>
+                        <li>Qualitätsmanagement</li>
+                        <li>Ersatz bei Krankheit garantiert</li>
+                        <li>Dokumentation nach Vorgaben</li>
+                    </ul>
+                    <button class="btn-pricing" onclick="selectPackage('Gewerbe')">Auswählen</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="kontakt" class="contact">
+        <div class="contact-wave-top"></div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Kontakt</h2>
+                <h3>Lassen Sie uns loslegen</h3>
+                <p>Rufen Sie uns an oder schreiben Sie eine Nachricht. Wir melden uns innerhalb von 24 Stunden bei Ihnen zurück – kostenlos und unverbindlich.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-text">
+                            <strong>Telefon</strong>
+                            <span>05692 / 12 34 56</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-text">
+                            <strong>E-Mail</strong>
+                            <span>info@diemel-reinigung.de</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-text">
+                            <strong>Adresse</strong>
+                            <span>Walme 4<br>34474 Diemelstadt</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <div class="contact-text">
+                            <strong>Erreichbarkeit</strong>
+                            <span>Mo-Fr: 08:00 - 18:00 Uhr<br>Notfall-Service: 24/7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form id="contactForm" onsubmit="handleSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Name *</label>
+                            <input type="text" name="name" required placeholder="Max Mustermann">
+                        </div>
+                        <div class="form-group">
+                            <label>Telefon *</label>
+                            <input type="tel" name="phone" required placeholder="05692 / 12 34 56">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>E-Mail *</label>
+                        <input type="email" name="email" required placeholder="max@beispiel.de">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Leistung</label>
+                            <select name="service">
+                                <option>Büroreinigung</option>
+                                <option>Privatreinigung</option>
+                                <option>Glasreinigung</option>
+                                <option>Bauendreinigung</option>
+                                <option>Desinfektion</option>
+                                <option>Sonstiges</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Gewünschter Termin</label>
+                            <input type="date" name="date">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Nachricht</label>
+                        <textarea name="message" rows="4" placeholder="Beschreiben Sie kurz Ihr Vorhaben..."></textarea>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">Ich habe die <a href="#">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *</label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        Anfrage senden <span>→</span>
+                    </button>
+                </form>
+                
+                <div id="formSuccess" style="display: none; text-align: center; padding: 3rem 2rem;">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">🌊</div>
+                    <h4 style="color: var(--text-dark); font-size: 1.5rem; margin-bottom: 0.5rem;">Vielen Dank!</h4>
+                    <p style="color: var(--text-gray);">Wir haben Ihre Anfrage erhalten und melden uns innerhalb von 24 Stunden bei Ihnen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-wave"></div>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo-text">Diemel<span style="color: var(--wave-main);">-Reinigung.de</span></div>
+                <p>Professionelle Gebäudereinigung in Diemelstadt und Umgebung. Zuverlässig, gründlich und mit ökologischem Anspruch seit 2012.</p>
+                
+                <div class="footer-address">
+                    <strong>📍 Besuchen Sie uns</strong>
+                    Walme 4<br>
+                    34474 Diemelstadt
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" title="Facebook">f</a>
+                    <a href="#" title="Instagram">📷</a>
+                    <a href="#" title="WhatsApp">💬</a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Leistungen</h4>
+                <ul>
+                    <li><a href="#leistungen">Büroreinigung</a></li>
+                    <li><a href="#leistungen">Privatreinigung</a></li>
+                    <li><a href="#leistungen">Glasreinigung</a></li>
+                    <li><a href="#leistungen">Bauendreinigung</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Unternehmen</h4>
+                <ul>
+                    <li><a href="#">Über uns</a></li>
+                    <li><a href="#">Karriere</a></li>
+                    <li><a href="#">Nachhaltigkeit</a></li>
+                    <li><a href="#">Referenzen</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Rechtliches</h4>
+                <ul>
+                    <li><a href="#">Impressum</a></li>
+                    <li><a href="#">Datenschutz</a></li>
+                    <li><a href="#">AGB</a></li>
+                    <li><a href="#">Widerruf</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Diemel-Reinigung.de | Alle Rechte vorbehalten</p>
+            <p>Walme 4, 34474 Diemelstadt | info@diemel-reinigung.de</p>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-text">
+            <strong>🌊 Datenschutz-Einstellungen</strong>
+            Wir verwenden Cookies, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. Weitere Informationen finden Sie in unserer Datenschutzerklärung.
+        </div>
+        <div class="cookie-buttons">
+            <button class="cookie-btn cookie-decline" onclick="declineCookies()">Ablehnen</button>
+            <button class="cookie-btn cookie-accept" onclick="acceptCookies()">Akzeptieren</button>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+        }
+        
+        // Form Handling
+        function handleSubmit(e) {
+            e.preventDefault();
+            const form = document.getElementById('contactForm');
+            const success = document.getElementById('formSuccess');
+            
+            form.style.display = 'none';
+            success.style.display = 'block';
+            
+            setTimeout(() => {
+                form.reset();
+                form.style.display = 'block';
+                success.style.display = 'none';
+            }, 5000);
+        }
+        
+        // Package Selection
+        function selectPackage(pkg) {
+            document.getElementById('kontakt').scrollIntoView({ behavior: 'smooth' });
+            const select = document.querySelector('select[name="service"]');
+            if(select) select.value = pkg;
+        }
+        
+        // Cookie Banner
+        window.onload = function() {
+            setTimeout(() => {
+                if (!localStorage.getItem('cookiesAccepted')) {
+                    document.getElementById('cookie-banner').classList.add('show');
+                }
+            }, 1000);
+        };
+        
+        function acceptCookies() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            document.getElementById('cookie-banner').classList.remove('show');
+        }
+        
+        function declineCookies() {
+            localStorage.setItem('cookiesAccepted', 'false');
+            document.getElementById('cookie-banner').classList.remove('show');
+        }
+        
+        // Navbar Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.style.boxShadow = '0 4px 20px rgba(6, 182, 212, 0.15)';
+            } else {
+                nav.style.boxShadow = '0 1px 3px rgba(0,0,0,0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
